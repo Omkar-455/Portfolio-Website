@@ -8,3 +8,11 @@ menuBtn.addEventListener("click",()=>{
 closeBtn.addEventListener("click",()=>{
      document.querySelector(".sidebar").style.display = "none"
 })
+
+let sideBarLi = document.querySelectorAll(".sidebar-conte .link");
+
+sideBarLi.forEach((li)=>{
+    li.addEventListener("click",()=>{
+        document.querySelector(".sidebar").style.display = "none"
+    })
+})
